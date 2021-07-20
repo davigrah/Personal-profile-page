@@ -11,6 +11,11 @@ body {
   color: #222;
   background: black;
 }
+.welcome-text {
+    position: relative;
+    /* make it position:absolute instead if you want it to be centered as shown below*/
+    z-index: 1;
+}
 /* Link Styles */
 
 a {
@@ -62,6 +67,15 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 header {
   line-height: 1.5;
 }
@@ -71,10 +85,10 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all 0.1s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1) ;
 }
 .tag {
   background-color: #222;
